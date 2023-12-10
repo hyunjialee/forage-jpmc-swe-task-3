@@ -24,9 +24,9 @@ export class DataManipulator {
     ratio,
     timestamp: serverResponds[0].timestamp > serverResponds[1].timestamp ?
         serverResponds[0].timestamp : serverResponds[1].timestamp,
-        upper_bound: upperBound,
-        lower_bound: lowerBound,
-        trigger_alert: (ratio > upperBound || ratio < lowerBound) ? ratio: undefined,
-      };
-    }
+    upper_bound: upperBound,
+    lower_bound: lowerBound,
+    trigger_alert: (ratio > upperBound || ratio < lowerBound) ? ratio: undefined,
+    };
   }
+}
